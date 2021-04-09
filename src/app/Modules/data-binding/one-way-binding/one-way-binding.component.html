@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>name:{{ name }}</h1>
+  <!-- Dùng giữa hai thẻ đóng mở -->
+  <h1>title:{{ showTitle() }}</h1>
+
+  <p [innerHTML]="name"></p>
+  <!-- Hiển thị trong các thẻ value -->
+  <input value="{{ name }}" /> <br />
+  <input [value]="name" />
+  <img [src]='imgSrc'>
+  <img src="{{imgSrc}}"> <br/>
+  
+
+  <!-- <button class="btn btn-success" (click)="changeName()">set titile</button> -->
+
+  <!-- Khởi tạo biến trên giao diện -->
+  <!-- #tInput (Template Variable): giống như document.getElementById("") biến đại diện cho thẻ input không giống id là Object sau khi DOM-->
+  <input #tInput>
+  <button class="btn btn-success" (click)="changeName(tInput.value)">set name</button>
+</div>
