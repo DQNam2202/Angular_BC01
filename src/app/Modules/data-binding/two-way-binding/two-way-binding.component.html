@@ -1,0 +1,18 @@
+<!-- <p>{{userName}}</p> -->
+
+<!-- Nhận trực tiếp Event mà không cần sài hàm callback -->
+
+<h3>ChangeUserName</h3>
+<input [value]="userName" (input)="changeUsername($event)" />
+
+<h3>FormModule</h3>
+<p>{{ email }}</p>
+<input [(ngModel)]="email" />
+
+<h3>Selected</h3>
+<p>{{ color }}</p>
+<select [(ngModel)]="color">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+</select>

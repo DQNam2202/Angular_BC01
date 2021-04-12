@@ -1,3 +1,4 @@
+import { DirectivesModule } from './Modules/directives/directives.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -21,6 +22,7 @@ import { DataBindingModule } from './Modules/data-binding/data-binding.module';
   // import modules
   // Các Module khác muốn sử dụng trong module này phải được import vào
   imports: [
+    DirectivesModule,
     BrowserModule,
     BaiTapLayoutModule,
     DataBindingModule

@@ -5,7 +5,10 @@ import { Component } from '@angular/core';
   // Template thành phần giao diện của thẻ
   template: `<div class="container">
     <!-- <app-bai-tap-layout></app-bai-tap-layout> -->
-    <app-one-way-binding></app-one-way-binding>
+    <!-- <app-one-way-binding></app-one-way-binding> -->
+    <!-- <app-two-way-binding></app-two-way-binding> -->
+    <!-- <app-structural-directives></app-structural-directives> -->
+    <app-attribute-directives></app-attribute-directives>
   </div>`,
 
   styleUrls: ['./app.component.css'], //đường dẫn đến file CSS của thẻ
