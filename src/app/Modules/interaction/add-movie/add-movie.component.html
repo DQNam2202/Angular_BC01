@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-header">Add Movie</div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="">Tên Phim</label>
+      <input type="text" class="form-control" [(ngModel)]="form.name"/>
+    </div>
+    <div class="form-group">
+      <label for="">Mô tả</label>
+      <input type="text" class="form-control" [(ngModel)]="form.description"/>
+    </div>
+     <div class="form-group">
+      <label for="">Hình ảnh</label>
+      <input type="text" class="form-control" [(ngModel)]="form.img"/>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    <button class="btn btn-success" (click)="handleAddMovies()" >Thêm phim</button>
+  </div>
+</div>

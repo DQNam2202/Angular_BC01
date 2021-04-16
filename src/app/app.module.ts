@@ -12,6 +12,8 @@ import { FooterComponent } from './bai-tap-layout/footer/footer.component';
 import { BaiTapLayoutModule } from './Modules/bai-tap-layout/bai-tap-layout.module';
 import { OneWayBindingComponent } from './Modules/data-binding/one-way-binding/one-way-binding.component';
 import { DataBindingModule } from './Modules/data-binding/data-binding.module';
+import { Baitap6Module } from './Modules/baitap6/baitap6.module';
+import { InteractionModule } from './Modules/interaction/interaction.module';
 
 // Module chứa nhiều components
 @NgModule({
@@ -25,7 +27,9 @@ import { DataBindingModule } from './Modules/data-binding/data-binding.module';
     DirectivesModule,
     BrowserModule,
     BaiTapLayoutModule,
-    DataBindingModule
+    DataBindingModule,
+    Baitap6Module,
+    InteractionModule
   ],
   providers: [], // Nới chứa các service muốn sử dụng được cho Module này khai báo tại đây
   bootstrap: [AppComponent]//Các component sử dụng được trong file index.html

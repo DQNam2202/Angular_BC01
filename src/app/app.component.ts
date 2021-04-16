@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
     <!-- <app-one-way-binding></app-one-way-binding> -->
     <!-- <app-two-way-binding></app-two-way-binding> -->
     <!-- <app-structural-directives></app-structural-directives> -->
-    <app-attribute-directives></app-attribute-directives>
+    <!-- <app-attribute-directives></app-attribute-directives> -->
+    <!-- <app-baitap6></app-baitap6> -->
+    <app-interaction></app-interaction>
   </div>`,
 
   styleUrls: ['./app.component.css'], //đường dẫn đến file CSS của thẻ

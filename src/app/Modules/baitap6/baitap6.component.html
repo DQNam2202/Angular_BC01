@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-header bg-dark text-white">Quản lý danh mục sản phẩm</div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="">Mã SP</label>
+      <input type="text" class="form-control" [(ngModel)]="form.maSP"/>
+      <label for="">Tên SP</label>
+      <input type="text" class="form-control" [(ngModel)]="form.tenSP"/>
+      <label for="">Giá SP</label>
+      <input type="text" class="form-control" [(ngModel)]="form.giaSP"/>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    <button class="btn btn-success" (click)="addProduct()">Thêm sản phẩm</button>
+  </div>
+</div>
+
+<table class="table mt-5">
+  <thead class="bg-dark text-white">
+    <tr>
+      <th>STT</th>
+      <th>Mã SP</th>
+      <th>Tên SP</th>
+      <th>Giá SP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products ; let idx=index" [class]="{ 'bg-secondary': (idx+1)%2===0}">
+      <td>{{idx+1}}</td>
+      <td>{{product.maSP}}</td>
+      <td>{{product.tenSP}}</td>
+      <td>{{product.giaSP}}</td>
+    </tr>
+    <!-- Nếu total bằng 0 thì không hiên thị lên giao diện -->
+    <tr *ngIf="total">
+      <td>{{total}}</td>
+    </tr>
+  </tbody>
+</table>

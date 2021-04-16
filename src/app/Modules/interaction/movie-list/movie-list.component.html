@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let movie of movies" class="col-sm-4">
+      <!-- phát tính hiệu từ thằng nào thì nhận tính hiệu từ thằng đó -->
+      <!-- Lắng nghe sự kiện là ngoặc tròn  -->
+      <app-movie-item
+        [movie]="movie"
+        (onSelect)="selectMovie($event)"
+        (onDelete)="deleteMovie($event)"
+      ></app-movie-item>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="selectedMovie" class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <img [src]="selectedMovie.img" width="300px" />
+    </div>
+    <div class="col-sm-6">
+      <h1>Tên Phim: {{ selectedMovie.name }}</h1>
+      <p>Mô tả:{{ selectedMovie.description }}</p>
+    </div>
+  </div>
+</div>
