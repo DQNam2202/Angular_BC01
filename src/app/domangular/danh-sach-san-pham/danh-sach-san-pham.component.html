@@ -1,0 +1,8 @@
+<h3 class="text-center">Danh Sách Sản Phẩm</h3>
+<div class="row">
+  <div class="col-4" *ngFor="let sanPham of mangSanPham">
+    <app-san-pham [sanPham]="sanPham"></app-san-pham>
+    
+  </div>
+</div>
+<button class="btn btn-success" (click)="thayDoiGia()">Thay đổi giá</button>

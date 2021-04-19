@@ -14,12 +14,17 @@ import { OneWayBindingComponent } from './Modules/data-binding/one-way-binding/o
 import { DataBindingModule } from './Modules/data-binding/data-binding.module';
 import { Baitap6Module } from './Modules/baitap6/baitap6.module';
 import { InteractionModule } from './Modules/interaction/interaction.module';
+import { DanhSachSanPhamComponent } from './domangular/danh-sach-san-pham/danh-sach-san-pham.component';
+import { SanPhamComponent } from './domangular/san-pham/san-pham.component';
+import { DomangularModule } from './domangular/domangular.module';
 
 // Module chứa nhiều components
 @NgModule({
   declarations: [ //Những thẻ có thể sử dụng được cho Module này
     AppComponent,
     DemoComponent,
+    // DanhSachSanPhamComponent,
+    // SanPhamComponent,
   ],
   // import modules
   // Các Module khác muốn sử dụng trong module này phải được import vào
@@ -29,7 +34,8 @@ import { InteractionModule } from './Modules/interaction/interaction.module';
     BaiTapLayoutModule,
     DataBindingModule,
     Baitap6Module,
-    InteractionModule
+    InteractionModule,
+    DomangularModule
   ],
   providers: [], // Nới chứa các service muốn sử dụng được cho Module này khai báo tại đây
   bootstrap: [AppComponent]//Các component sử dụng được trong file index.html
